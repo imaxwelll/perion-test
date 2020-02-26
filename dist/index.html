@@ -1,83 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<script src='http://code.jquery.com/jquery-latest.js'></script>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Perion Test Task</title>
-<link href="./css/style.css" rel="stylesheet"></head>
+  <link href="./css/style.css" rel="stylesheet"></head>
 
-<body>
+  <body>
     <div class="teaser-wrapper">
-        <span class="close-button" id="toggle2">×</span>
-        <div class="ultras-wrapper">
-            <div class="ultras ultras__portland-timbers disappearing"
-                id="ultras-left"
-                data-aos="fade-down-right"
-                data-aos-anchor="#trigger-left"
-                data-aos-anchor-placement="top-top"
-                data-aos-once="true"
-                data-aos-duration="1500"
-                >
-                    <div class="team-logo team-logo--portland-timbers" 
-                        data-aos="zoom-out-down" 
-                        data-aos-anchor="#small"
-                        data-aos-anchor-placement="top-top"
-                        data-aos-once="true">
-                    </div>
-            </div>
-            <div class="ultras ultras__fc-dallas disappearing"
-                id="ultras-right"
-                data-aos="fade-up-left"
-                data-aos-anchor="#trigger-left"
-                data-aos-anchor-placement="top-top"
-                data-aos-once="true"
-                data-aos-duration="1500"
-            
-                >
-                    <div class="team-logo team-logo--fc-dallas" 
-                        data-aos="zoom-out-down" 
-                        data-aos-anchor="#small"
-                        data-aos-anchor-placement="top-top"
-                        data-aos-once="true">
-                    </div>
-            </div>
-        </div> 
-        <div class="teaser-text__wrapper">
-            <div class="teaser-text disappearing teaser-text--large" id="large" data-aos="fade-down"  data-aos-easing="ease-in-sine" data-aos-delay="600" data-aos-duration="1800" data-aos-anchor="#ultras-right" data-aos-anchor-placement="top-center" data-aos-once="true">one</div>
-            <div class="teaser-text disappearing teaser-text--medium" id="medium" data-aos="fade-down"  data-aos-easing="ease-in-sine" data-aos-delay="900" data-aos-duration="2000" data-aos-anchor="#large" data-aos-anchor-placement="top-top" data-aos-once="true">game</div>
-            <div class="teaser-text disappearing teaser-text--small" id="small" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="1000" data-aos-duration="2100" data-aos-anchor="#medium" data-aos-anchor-placement="top-top" data-aos-once="true">to glory</div>
+      <span class="close-button" id="toggle2">×</span>
+      <div class="ultras-wrapper">
+        <div
+          class="ultras ultras__portland-timbers disappearing"
+          id="ultras-left"
+          data-aos="fade-down-right"
+          data-aos-anchor="#trigger-left"
+          data-aos-anchor-placement="top-top"
+          data-aos-once="true"
+          data-aos-duration="1500"
+        >
+          <div
+            class="team-logo team-logo--portland-timbers"
+            data-aos="zoom-out-down"
+            data-aos-anchor="#small"
+            data-aos-anchor-placement="top-top"
+            data-aos-once="true"
+          ></div>
         </div>
-        <div class="container" data-aos-delay="600" data-aos-duration="6000" data-aos="fade-up" data-aos-anchor-placement="top-top" data-aos-anchor="#small" data-aos-once="true">
-            <div class="game-info">
-                <h1 class="game-announcement__text"><span class="game-announcement__text--background">portland timbers</span> <br> <span class="game-announcement__text--background">vs</span> <br> <span class="game-announcement__text--background">fc dallas</span></h1>
-                <p class="game-announcement__date"><span class="game-announcement__date--month">December 6</span> <span class="game-announcement__date--time">3PM ET</span></p>
-            </div>
-            <div class="element">
-                <div class="hotspot-wrapper" id="toggle">
-                    <div class="hotspot-button">+</div>
-                    <div class="hotspot-text">watch tv spot</div>
-                </div>
-                <!-- <button class="close-button" id="hider">×</button> -->
-                <div class="video-container toggleAction" style="display: none">
-                    <div class="video-wrapper">
-                        <button id="toggle">
-                            <span class="close-button">×</span>
-                        </button>
-                        <video width="1188" height="669" controls="controls" poster="img/video-poster.png">
-                            <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                            <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
-                        </video>
-                    </div>
-                </div>
-            </div>
-
+        <div
+          class="ultras ultras__fc-dallas disappearing"
+          id="ultras-right"
+          data-aos="fade-up-left"
+          data-aos-anchor="#trigger-left"
+          data-aos-anchor-placement="top-top"
+          data-aos-once="true"
+          data-aos-duration="1500"
+        >
+          <div
+            class="team-logo team-logo--fc-dallas"
+            data-aos="zoom-out-down"
+            data-aos-anchor="#small"
+            data-aos-anchor-placement="top-top"
+            data-aos-once="true"
+          ></div>
         </div>
-        <div class="goblet-in-arms" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="900"></div>
-        <div class="confetti" id="trigger-left" data-aos="fade-up" data-aos-easing="ease-out-elastic" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-anchor=".goblet-in-arms"></div>
+      </div>
+      <div class="teaser-text__wrapper">
+        <div
+          class="teaser-text disappearing teaser-text--large"
+          id="large"
+          data-aos="fade-down"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="600"
+          data-aos-duration="1800"
+          data-aos-anchor="#ultras-right"
+          data-aos-anchor-placement="top-center"
+          data-aos-once="true"
+        >
+          one
+        </div>
+        <div
+          class="teaser-text disappearing teaser-text--medium"
+          id="medium"
+          data-aos="fade-down"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="900"
+          data-aos-duration="2000"
+          data-aos-anchor="#large"
+          data-aos-anchor-placement="top-top"
+          data-aos-once="true"
+        >
+          game
+        </div>
+        <div
+          class="teaser-text disappearing teaser-text--small"
+          id="small"
+          data-aos="fade-down"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="1000"
+          data-aos-duration="2100"
+          data-aos-anchor="#medium"
+          data-aos-anchor-placement="top-top"
+          data-aos-once="true"
+        >
+          to glory
+        </div>
+      </div>
+      <div
+        class="container"
+        data-aos-delay="600"
+        data-aos-duration="6000"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-top"
+        data-aos-anchor="#small"
+        data-aos-once="true"
+      >
+        <div class="game-info">
+          <h1 class="game-announcement__text">
+            <span class="game-announcement__text--background"
+              >portland timbers</span
+            >
+            <br />
+            <span class="game-announcement__text--background">vs</span> <br />
+            <span class="game-announcement__text--background">fc dallas</span>
+          </h1>
+          <p class="game-announcement__date">
+            <span class="game-announcement__date--month">December 6</span>
+            <span class="game-announcement__date--time">3PM ET</span>
+          </p>
+        </div>
+        <div class="element">
+          <div class="hotspot-wrapper" id="toggle">
+            <div class="hotspot-button">+</div>
+            <div class="hotspot-text">watch tv spot</div>
+          </div>
+          <div class="video-container toggleAction" style="display: none">
+            <div class="video-wrapper">
+              <button id="toggle">
+                <span class="close-button">×</span>
+              </button>
+              <video
+                width="1188"
+                height="669"
+                controls="controls"
+                poster="img/video-poster.png"
+              >
+                <source
+                  src="video/video.mp4"
+                  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+                />
+                <source
+                  src="video/duel.webm"
+                  type='video/webm; codecs="vp8, vorbis"'
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="goblet-in-arms"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        data-aos-delay="900"
+      ></div>
+      <div
+        class="confetti"
+        id="trigger-left"
+        data-aos="fade-up"
+        data-aos-easing="ease-out-elastic"
+        data-aos-duration="3000"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-anchor=".goblet-in-arms"
+      ></div>
     </div>
-<script type="text/javascript" src="js/bundle.js"></script></body>
+  <script type="text/javascript" src="js/bundle.js"></script></body>
 </html>
