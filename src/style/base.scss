@@ -1,0 +1,375 @@
+@font-face {
+	font-family: 'DINNextLTPro';
+	src: url('../fonts/DINNextLTPro-Light.woff2') format('woff2'),
+		 url('../fonts/DINNextLTPro-Light.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DINNextLTPro';
+	src: url('../fonts/DINNextLTPro-Medium.woff2') format('woff2'),
+		 url('../fonts/DINNextLTPro-Medium.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DINNextLTPro';
+	src: url('../fonts/DINNextLTPro-Heavy.woff2') format('woff2'),
+		 url('../fonts/DINNextLTPro-Heavy.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+  }
+
+  body[data-aos-duration='6000'] [data-aos], [data-aos][data-aos][data-aos-duration='6000']{
+    transition-duration: 6000ms;
+  }
+  body[data-aos-duration='5000'] [data-aos], [data-aos][data-aos][data-aos-duration='5000']{
+    transition-duration: 5000ms;
+  }
+  body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000']{
+    transition-duration: 4000ms;
+  }
+  body {
+	  overflow-x: hidden;
+	  font-family: DINNextLTPro;
+	  font-weight: 300;
+  }
+ 
+	#toggle2.close-button {
+		position: fixed;
+		right: 70px;
+		top: 32px;
+		z-index: 25;
+		width: 44px;
+		height: 44px;
+		border: 3px double white;
+		font-weight: 100;
+		font-size: 38px;
+	}
+
+  .teaser-wrapper {
+	  position: relative;
+	  height: 100vh;
+	  width: 1820px;
+	  max-width: 100%;
+	  margin: 0 auto;
+	.goblet-in-arms {
+		position: fixed;
+    	top: 30%;
+		left: 50%;
+		margin-top: -275px; 
+		margin-left: -250px;
+		background-image: url('../img/goblet-in-hands.png');
+		background-repeat: no-repeat;
+		width: 681px;
+		height: 100vh;
+		z-index:2;
+	  }
+	  .confetti {
+		background-image: url('../img/confetti.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 100vh;
+		width: 100%;
+		height:100vh;
+		z-index:10;
+	  }
+
+	  .video-container {
+		z-index: 25;
+		justify-content: center;
+		margin: 0 auto;
+		align-items: center;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	  }
+
+	  .teaser-text__wrapper {
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  
+	  }
+	  .teaser-text {
+		  	position: absolute;
+		  	top: 100vh;
+			color: #ffffff;
+			text-shadow: 7px 7px 30px #000000;
+			font-weight: 600;
+			text-transform: uppercase;
+			font-family: DINNextLTPro;
+			z-index: 15;
+
+		&--large {
+			font-size:308px;
+			line-height: 211.14px;
+			padding: 0.82em 0 0;
+		}
+
+		&--medium {
+			font-size: 215px;
+			line-height: 176.61px;
+			padding: 2.1em 0 0;
+		}
+
+		&--small {
+			font-size: 123px;
+			line-height: 90.67px;
+			padding: 5em 0 0;
+		}
+
+	  }
+  }
+
+  .ultras-wrapper {
+	  position: absolute;
+	  width: 100%;
+	  height: 100vh;
+	  top: 100vh;
+	.ultras {
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		z-index:12;
+		&__portland-timbers {
+			background-image: url('../img/ultras__left.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			
+			
+		}
+		&__fc-dallas {
+			background-image: url('../img/ultras__right.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position-x: 98%;
+		}
+
+	}
+	  
+}
+.team-logo {
+	width:379px;
+	height: 403px;
+	z-index: 15;
+	position: absolute;
+	top: 27vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+	&--fc-dallas {
+		background-image: url('../img/team-logo__fc-dallas.png');
+		right: 0;
+		margin-right: 165px;
+	
+	}
+	&--portland-timbers {
+		background-image: url('../img/team-logo__portland-timbers.png');
+		margin-left: 158px;
+	}
+}
+.container {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	// top: 100vh;
+	width: 100%;
+	// position: relative;
+	z-index: 11;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 571px;
+    	left: 27px;
+		background-image: url('../img/goblet-logo.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 417px;
+		height: 364px;
+		z-index: 12;
+	}
+
+	.game-info {
+		width:100%;
+		position: absolute;
+		left: 0;
+		color: #ffffff;
+		background-color: #000000;
+		clip-path: polygon(0 0, 56% 0, 17% 100%, 0 100%);
+		-webkit-shape-margin: 2em;
+		shape-margin: 2em;
+		z-index: 11;
+		height: 100vh;
+		padding-left: 30px;
+
+		.game-announcement__text {
+			color: #000000;
+			font-family: DINNextLTPro;
+			font-size: 73px;
+			font-weight: 600;
+			text-transform: uppercase;
+			line-height: 104px;
+
+			&--background {
+				background: #ffffff;
+				padding: 13px 74px 0px 6px;
+			}
+		}
+
+		.game-announcement__date {
+			color: #ffffff;
+			font-family: DINNextLTPro;
+			font-size: 47px;
+			position: relative;
+
+			&--month {
+				position: relative;
+				padding-right: 48px;
+			
+				&:after {
+					content:"th";
+					position: absolute;
+					left: 247px;
+					color: #ffffff;
+					font-size: 25px;
+				}
+			}
+			&--time {
+				position: relative;
+				font-weight: 900;
+
+				&:before {
+					content:"|";
+					position: absolute;
+					right: 163px;
+					font-weight: 900;
+					font-size: 47px;
+					color: #d0ad68;
+				}
+			}
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 75px;
+				background-image: url('../img/tv-channel.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 100%;
+				height: 100%;
+
+			}
+		}
+
+	}
+	.element {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		background-image: url('../img/goblet-render.png');
+		background-size: cover;
+		background-position: -100px 0;
+		background-repeat: no-repeat;
+	}
+}
+
+.hotspot-wrapper {
+	position: absolute;
+    top: 124px;
+	right: 386px;
+	cursor: pointer;
+}
+.hotspot-text {
+	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.75);
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.hotspot-button {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+	height: 88px;
+    font-size: 88px;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 100px;
+    letter-spacing: -1px;
+    color: white;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+	-webkit-animation: pulse 1.5s infinite;
+	border: double 12px #ffffff;
+}
+
+
+  .hotspot-button:hover {
+	-webkit-animation: none;
+  }
+  
+  @-webkit-keyframes pulse {
+	0% {
+	  transform:(scale(.9));
+	}
+	70% {
+	   transform:(scale(1));
+	  box-shadow: 0 0 0 50px rgba(#ffffff, 0);
+	}
+	  100% {
+	   transform:(scale(.9));
+	  box-shadow: 0 0 0 0 rgba(#ffffff, 0);
+	}
+  }
+
+  .video-container {
+	z-index: 25;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
+    position: absolute;
+    width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .video-wrapper {
+	  position: relative;
+  }
+
+  .close-button {
+	position: absolute;
+    right: -44px;
+    top: -43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: lowercase;
+    width: 89px;
+    height: 89px;
+    font-size: 82px;
+    font-weight: 100;
+    border-radius: 50%;
+    border: double 12px #ffffff;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 20;
+  }
